@@ -36,7 +36,7 @@ The **Floor Height Units** is the number of height units tall that the floor of 
 | Wall Height Units | 2 |
 | Floor Height Units | 0 |
 
-![2x3x2 Bin Example](docs/images/2x3x2_example_bin.png)
+![2x3x2 Bin Example](docs/images/3x2x2_example_bin.png)
 
 #### 2x2x2 Blank
 
