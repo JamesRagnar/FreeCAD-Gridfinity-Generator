@@ -15,7 +15,7 @@ The FreeCAD project includes two main bodies: the Baseplate and the Module. Each
 The Parameter spreadsheet includes all values that can be edited to create the custom sized baseplates and modules. All values are **Integer** type.
 
 | Parameter | Description | Range |
-|---| --- | --- |
+|---|---|---|
 | Columns | The number of columns wide | > 0 |
 | Rows | The number of rows tall | > 0 |
 | Height Units | The number of height units tall to make the module | >= 0 |
@@ -24,3 +24,40 @@ The Parameter spreadsheet includes all values that can be edited to create the c
 The Gridfinity specification measures the height of the modules in height units, which work out to multiples of 7mm. The base of each Module plus the top lip also total to 7mm, so individual modules of varying sizes can be stacked consistently. The **Height Units** in the Parameters spreadsheet is a count of the size of the box component of the Module, and is exclusive of the floor. A **Height Units** value of 0 creates a flat plate with a 0 height bin size.
 
 The **Cut Unit** is the number of height units that should be cut in to the module box from the top face. A value equal to the number of **Height Units** in the Parameters spreadsheet will create a fully cut out bin, while a value of 0 will create a "blank" bin. This bin is useful in creating custom objects using a Boolean Delete (or similar operation) to cut out the profile of the item you would like to store.
+
+### Examples
+
+<!--
+#### 2x3x2 Bin
+
+| Parameter | Value |
+|---|---|
+| Columns | 2 |
+| Rows | 3 |
+| Height Units | 2 |
+| Cut Units | 2 |
+
+![2x3x2 Bin Example](docs/images/2x3x2_example_bin.png)
+-->
+
+#### 2x2x2 Blank
+
+| Parameter | Value |
+|---|---|
+| Columns | 2 |
+| Rows | 2 |
+| Height Units | 2 |
+| Cut Units | 0 |
+
+![2x2x2 Blank Example](docs/images/2x2x2_example_blank.png)
+
+#### 1x3x0 Plate
+
+| Parameter | Value |
+|---|---|
+| Columns | 1 |
+| Rows | 3 |
+| Height Units | 0 |
+| Cut Units | 0 |
+
+![1x3x0 Plate Example](docs/images/1x3x0_example_plate.png)
